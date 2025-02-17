@@ -1,0 +1,115 @@
+
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    background: var(--color-grey-900, #141414);
+    display: flex;
+        width: 1440px;
+        height: 960px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        text-align:center;
+}
+
+
+.profile-container {
+    display: flex;
+        max-width: 384px;
+        padding: var(--spacing-500, 40px);
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-300, 24px);
+        flex: 1 0 0;
+
+        border-radius: 12px;
+            background: var(--color-grey-800, #1F1F1F);
+}
+ul.social-links {
+    list-style: none;
+}
+
+a {
+    color: var(--color-white, #FFF);
+        /* text-preset-2-bold */
+        font-family: Inter;
+        font-size: var(--font-size-text-preset-2, 14px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+
+        text-decoration: none;
+            /* Remove underline */
+            font-weight: normal;
+        /* 21px */
+     
+}
+.username {
+    color: var(--color-white, #FFF);
+        text-align: center;
+        font-size: var(--font-size-text-preset-1, 24px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        /* 36px */
+
+}
+
+.user-information {
+    color: var(--color-green, #C4F82A);
+        text-align: center;
+        font-family: Inter;
+        font-size: var(--font-size-text-preset-2, 14px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 10%;
+        /* 21px */
+}
+
+.user-description{
+    align-self: stretch;
+    color: var(--color-white, #FFF);
+        text-align: center;
+    
+        /* text-preset-2 */
+        font-family: Inter;
+        font-size: var(--font-size-text-preset-2, 14px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15%;
+        /* 21px */
+}
+
+.social-links {
+    display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: var(--spacing-200, 16px);
+        align-self: stretch;
+}
+
+.link-item {
+    display: flex;
+        padding: var(--spacing-150, 12px);
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-100, 8px);
+        align-self: stretch;
+        border-radius: 8px;
+            background: var(--color-grey-700, #333);
+            width: 100%;
+            transition: background .3s easee, color
+            .3s ease;
+}
+
+.link-item:hover {
+    color:  black;
+    background:var(--color-green, #C4F82A); 
+
+}
